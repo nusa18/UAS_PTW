@@ -59,3 +59,7 @@ Auth::routes();
 Route::get('/home', function() {
     return redirect('/admin');
   });
+
+  Route::get('/sym', function () {
+    Artisan::call('storage:link');
+});
